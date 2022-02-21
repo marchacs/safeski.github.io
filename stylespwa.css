@@ -1,7 +1,7 @@
 #map {
     height: 400px;
   }
-  
+
   /* Optional: Makes the sample page fill the window. */
   html,
   body {
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .custom-map-control-button {
     background-color: #fff;
     border: 0;
@@ -25,12 +25,7 @@
   .custom-map-control-button:hover {
     background: #ebebeb;
   }
-  
+
   a:link{
     color: black;
-  }
-
-  .mainbackground{
-    background-image: url("safeskilogo-04.png");
-
   }
