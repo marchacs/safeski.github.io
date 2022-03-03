@@ -39,3 +39,19 @@ body {
 a:link{
   color: black;
 }
+
+.corners{
+border-radius: 50px;
+}
+
+
+button{
+width: 400px;
+
+}
+
+h1{
+font-family: myriad-pro, sans-serif;
+font-weight: 700;
+font-style: bold;
+}
