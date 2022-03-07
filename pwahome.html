@@ -6,9 +6,11 @@
         <meta name="theme-color" content="#FF7676">
         <title>PWA</title>
         <link rel="stylesheet" href="src/master.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="stylesheet.css">
         <link rel="manifest" href="manifest.json">
         <link rel="stylesheet" href="bootstrap.min.css">
+        <script type="text/javascript" src="script.js"></script>
+
 
     </head>
     <body>
@@ -78,7 +80,7 @@
        <div>
 
         <div class="text-center my-5">
-        <button class="btn-danger btn  rounded shadow" id="findMe"> Find Me </button>
+        <button class="btn btn-dark btn-lg text-light corners" id="findMe"> Find Me </button>
         </div>
 
     </div>
@@ -89,7 +91,7 @@
        <div id="map"></div>
 
      <script async
-     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyZ6sv-GtsVZyIcavfGDfBMy2IfiF9AJ4&callback=initMap">
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyZ6sv-GtsVZyIcavfGDfBMy2IfiF9AJ4&libraries=geometry&callback=initMap">
      </script>
 
            <script src="src/index.js"></script>

@@ -7,13 +7,14 @@ function initMap() {
   const myLatLng = { lat:39.4808, lng:-106.0676 };
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,
+   
     center: myLatLng,
   });
 
  
   infoWindow = new google.maps.InfoWindow();
 
-  const locationButton = document.createElement("button");
+  // const locationButton = document.createElement("button");
 
 document.getElementById('findMe').addEventListener("click", () => {
   // locationButton.textContent = "Pan to Current Location";
@@ -32,11 +33,12 @@ document.getElementById('findMe').addEventListener("click", () => {
             position: pos,
             map,
           });
-
+          alert('boo');
           // infoWindow.setPosition(pos);
           // infoWindow.setContent("Location found.");
           // infoWindow.open(map);
           map.setCenter(pos);
+
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
