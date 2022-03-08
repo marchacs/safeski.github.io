@@ -88,7 +88,7 @@ signUp.addEventListener('click',(e) => {
       const user = userCredential.user;
 
       set(ref(database, 'users/' + user.uid),{
-          username: username,
+          // username: username,
           email: email
       })
       
