@@ -35,7 +35,9 @@
   </div>
 
     <h1 class="text-center"> Login or Sign Up</h1>
-
+    <div class="form-group container my-2" style="align-items:center;">
+      <input type="text" id="username" name="username" placeholder="Username" class="form-control" />
+    </div>
     <div class="form-group container my-2" style="align-items:center;">
     <input type="text" id="email" name="email" placeholder="E-mail" class="form-control" />
   </div>
@@ -80,7 +82,7 @@ signUp.addEventListener('click',(e) => {
 
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
-  // var username = document.getElementById('username').value;
+  var username = document.getElementById('username').value;
 
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -88,8 +90,9 @@ signUp.addEventListener('click',(e) => {
       const user = userCredential.user;
 
       set(ref(database, 'users/' + user.uid),{
-          // username: username,
-          email: email
+          username: username,
+          email: email,
+          password: password,
       })
       
       alert('user created!');
