@@ -39,9 +39,7 @@ document.getElementById('findMe').addEventListener("click", () => {
           // infoWindow.setContent("Location found.");
           // infoWindow.open(map);
           map.setCenter(pos);
-          update(ref(database, 'users/' + user.pos),{
-            position: pos,
-          });
+         
 
         },
         () => {
