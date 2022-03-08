@@ -31,7 +31,7 @@ document.getElementById('findMe').addEventListener("click", () => {
           };
           update(ref(database, 'users/' + user.pos),{
             position: pos,
-          })
+          });
           new google.maps.Marker({
             position: pos,
             map,
