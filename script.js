@@ -29,6 +29,9 @@ document.getElementById('findMe').addEventListener("click", () => {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
+          update(ref(database, 'users/' + user.pos),{
+            position: pos,
+          })
           new google.maps.Marker({
             position: pos,
             map,
