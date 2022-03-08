@@ -33,7 +33,7 @@ document.getElementById('findMe').addEventListener("click", () => {
             position: pos,
             map,
           });
-          alert('boo');
+          alert('Ski Patrol is on the way!(Not actually this is a test)');
           // infoWindow.setPosition(pos);
           // infoWindow.setContent("Location found.");
           // infoWindow.open(map);
