@@ -1,12 +1,12 @@
 {
-"name" : "dcode PWA example",
-"short_name" : "dcode PWA example",
+"name" : "SafeSki",
+"short_name" : "SafeSki",
 "start_url" : ".",
 "background_color": "#E8E8E8",
 "theme_color" : "#FF7676", 
 "display" : "standalone", 
 "icons" : [
-{"src": "images/logo192.png",
+{"src": "images/safeskiapp.png",
  "sizes": "192x192",
  "type": "image/png"
 
