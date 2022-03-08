@@ -59,7 +59,7 @@ document.getElementById('dashboardBtn').addEventListener("click", () => {
 });
 
 
-document.getElementById('emailSpot').innerHTML = user.email;
+
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
@@ -70,7 +70,5 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
-
-
 
 
