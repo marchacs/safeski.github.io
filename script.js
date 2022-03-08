@@ -52,11 +52,14 @@ document.getElementById('findMe').addEventListener("click", () => {
     }
   });
 
-
-
-
-  
 }
+//dashboard button
+document.getElementById('dashboardBtn').addEventListener("click", () => {
+  window.location.href = 'skipatroldashboard.html'
+});
+
+
+document.getElementById('emailSpot').innerHTML = user.email;
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);

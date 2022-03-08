@@ -34,6 +34,9 @@
     
         <h1 class="text-center"> Login or Sign Up</h1>
     <div class="row">
+      <div class="form-group container my-2 col-sm-10" style="align-items:center;">
+        <input type="text" id="username" name="username" placeholder="Username" class="form-control py-4" />
+      </div>
     <div class="form-group container my-2 col-sm-10" style="align-items:center;">
         <input type="text" id="email" name="email" placeholder="E-mail" class="form-control py-4" />
       </div>
@@ -76,14 +79,14 @@ signUp.addEventListener('click',(e) => {
 
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
-
+  var username = document.getElementById('username').value;
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
      // Signed in
       const user = userCredential.user;
 
       set(ref(database, 'users/' + user.uid),{
-        //   username: username,
+          username: username,
           email: email,
           password: password,
       })
@@ -162,7 +165,7 @@ signOut.addEventListener('click',(e)=>{
 
 });
 
-const auth = getAuth();
+// const auth = getAuth();
 setPersistence(auth, browserSessionPersistence)
   .then(() => {
     // Existing and future Auth states are now persisted in the current
