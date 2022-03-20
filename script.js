@@ -4,8 +4,6 @@
 // locate you.
 // global var 
 var pos;
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { initializeFirestore } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 
 
 // Your web app's Firebase configuration
