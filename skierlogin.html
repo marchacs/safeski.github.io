@@ -129,7 +129,6 @@ signUp.addEventListener('click',(e) => {
         const dt = new Date();
          update(ref(database, 'users/' + user.uid),{
           last_login: dt,
-          position: pos,
         })
         window.location.href = 'pwahome.html'
         //  alert('User loged in!');
@@ -163,20 +162,20 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
-signOut.addEventListener('click',(e)=>{
+// signOut.addEventListener('click',(e)=>{
 
-   signOut(auth).then(() => {
-     // Sign-out successful.
-     alert('user loged out');
-   }).catch((error) => {
-     // An error happened.
-     const errorCode = error.code;
-     const errorMessage = error.message;
+//    signOut(auth).then(() => {
+//      // Sign-out successful.
+//      alert('user loged out');
+//    }).catch((error) => {
+//      // An error happened.
+//      const errorCode = error.code;
+//      const errorMessage = error.message;
 
-        alert(errorMessage);
-   });
+//         alert(errorMessage);
+//    });
 
-});
+// });
 
 // const auth = getAuth();
 setPersistence(auth, browserSessionPersistence)
