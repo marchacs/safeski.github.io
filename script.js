@@ -1,19 +1,14 @@
 let map, infoWindow;
+
 function initMap() {
-  const myLatLng = { lat:39.4808, lng:-106.0676 };
-  const map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat:39.4808, lng:-106.0676 },
     zoom: 14,
-   
-    center: myLatLng,
+    
   });
- 
   infoWindow = new google.maps.InfoWindow();
-  // const locationButton = document.createElement("button");
-document.getElementById('findMe').addEventListener("click", () => {
-  // locationButton.textContent = "Pan to Current Location";
-  // locationButton.classList.add("custom-map-control-button");
-  // map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-  // locationButton.addEventListener("click", () => {
+
+  document.getElementById('findMe').addEventListener("click", () => {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -23,14 +18,12 @@ document.getElementById('findMe').addEventListener("click", () => {
             lng: position.coords.longitude,
           };
           new google.maps.Marker({
-             position: pos,
-             map,
-           });
-           
-           alert('Ski Patrol is on the way!(Not actually this is a test)');
-           // infoWindow.setPosition(pos);
-           // infoWindow.setContent("Location found.");
-           // infoWindow.open(map);
+            position: pos,
+            map,
+          });
+          // infoWindow.setPosition(pos);
+          // infoWindow.setContent("Location found.");
+          // infoWindow.open(map);
           map.setCenter(pos);
         },
         () => {
@@ -42,8 +35,8 @@ document.getElementById('findMe').addEventListener("click", () => {
       handleLocationError(false, infoWindow, map.getCenter());
     }
   });
-  
 }
+
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(
@@ -53,3 +46,4 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
+
