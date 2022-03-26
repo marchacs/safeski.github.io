@@ -21,10 +21,17 @@ function initMap() {
             position: pos,
             map,
           });
+
+         
+
           // infoWindow.setPosition(pos);
           // infoWindow.setContent("Location found.");
           // infoWindow.open(map);
           map.setCenter(pos);
+
+        //   setTimeout(function(){
+        //     window.location.href = 'ontheway.html';
+        //  }, 5000);
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
