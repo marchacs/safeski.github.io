@@ -54,3 +54,11 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
+document.getElementById('locationSent').addEventListener("click", () => {
+
+            window.location.href = 'ontheway.html';
+
+
+
+
+});
