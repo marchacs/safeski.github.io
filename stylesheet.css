@@ -49,9 +49,15 @@ button{
 width: 400px;
 
 }
-
 h1,h2,h3,h4,h5{
 font-family: myriad-pro, sans-serif;
 font-weight: 700;
 font-style: bold;
 }
+
+h1{
+  font-family: myriad-pro, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: xx-large;
+  }

@@ -29,3 +29,11 @@
   a:link{
     color: black;
   }
+
+
+  h1{
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+
+  }
