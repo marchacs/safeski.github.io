@@ -82,3 +82,20 @@ h1{
 
 
   .green{color: #85E089;}
+
+  .frost{  box-shadow: 0 0 5px 0 ;
+    background: inherit;
+    backdrop-filter: blur(10px);}
+
+    a{text-decoration: none;}
+
+    a:current{text-decoration: underline;}
+
+    .modal-backdrop {
+      box-shadow: 0 0 5px 0 ;
+    background: inherit;
+    backdrop-filter: blur(10px);
+   }
+
+
+   .corners{ border-radius: 50px;}
