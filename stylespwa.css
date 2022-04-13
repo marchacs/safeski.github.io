@@ -4,11 +4,21 @@
 
   /* Optional: Makes the sample page fill the window. */
   html,
-  body {
+  body{
     height: 100%;
     margin: 0;
     padding: 0;
   }
+
+  .footer
+{
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 
   .custom-map-control-button {
     background-color: #fff;
@@ -36,4 +46,9 @@
     font-weight: 700;
     font-style: bold;
 
+  }
+
+  .red{
+
+    background-color: #ec1c24;
   }
