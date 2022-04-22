@@ -39,7 +39,7 @@
   a:link{
     color: black;
   }
-
+a:visited{color: grey;}
 
   h1{
     font-family: myriad-pro, sans-serif;
