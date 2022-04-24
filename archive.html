@@ -11,6 +11,72 @@
 
   </head>
   <body class="bg-light mt-3">
+    <div class="modal fade shadow border-0 " id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content " style=" border-radius: 20px;">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">Injury Report</h1> <button type="button" name="button" class="btn btn-dark btn-sm text-light corners mx-3" style="width: 7vw; height:5vh;">
+              <a href="delete.html" class="text-white"> <h5> Archive</h5> </a>
+              </button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+                 
+            <div class="col">
+    
+                    <table class="table table-sm">
+                        
+                        <tbody>
+                          <tr>
+                            <th scope="row">Name</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+    
+                          </tr>
+                          <tr>
+                            <th scope="row">Age</th>
+                            <td>32</td>
+                          
+                          </tr>
+                          <tr>
+                            <th scope="row">Weight</th>
+                            <td >Male</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">Height</th>
+                            <td >6' 2"</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">Sex</th>
+                            <td >Male</td>
+                  
+                          </tr>
+                          <tr class="table-danger">
+                            <th scope="row">Pain Level</th>
+                            <td class="table-danger">Severe</td>
+                      
+                          </tr>
+                        </tbody>
+                      </table>
+                    <h1>notes:</h1>
+                    <div class="form-group my-2 col-sm-10 shadow-sm" style="align-items:center;">
+                      <input type="text" id="" name="notes" placeholder="Notes" class="form-control border-0 py-3" />
+                    </div>
+                    <button type="button" name="button" class="btn btn-dark btn-sm text-light corners" style="width: 7vw; height:5vh;">
+                      <a class="text-white" href="#"> <h5> Save</h5> </a>
+                      </button>
+                    
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
    <div class="container-fluid py-4 pt-5 mt-5" >
       <div class="row">
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
@@ -173,13 +239,15 @@
       </tr>
     </thead>
     <tbody>
+      
       <tr>
         <th scope="row">1</th>
         <td>Mark</td>
         <td>Otto</td>
         <td> 2/24/2022</td>        
-        <td> <a href="" class="text-danger"> View Report</a></td>
+        <td> <a href="#examplemodal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-danger"> View Report</a></td>
       </tr>
+
       <tr>
         <th scope="row">2</th>
         <td>Jacob</td>
